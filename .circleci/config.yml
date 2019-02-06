@@ -4,7 +4,7 @@ jobs: # a collection of steps
 
     working_directory: ~/circlecipoc-clamp-github # directory where steps will run
 
-    machine:
+    machine: true
 
     steps: # a collection of executable commands
 
