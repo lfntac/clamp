@@ -1,4 +1,9 @@
-language: ruby
+language: java
 
 services:
   - docker
+
+addons:
+  apt:
+    packages:
+      - docker-ce
