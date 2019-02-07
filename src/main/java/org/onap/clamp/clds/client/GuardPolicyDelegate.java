@@ -52,6 +52,7 @@ public class GuardPolicyDelegate {
     protected static final EELFLogger logger = EELFManager.getInstance().getLogger(GuardPolicyDelegate.class);
     protected static final EELFLogger metricsLogger = EELFManager.getInstance().getMetricsLogger();
     private final PolicyClient policyClient;
+    private final ClampProperties refProp;
 
     @Autowired
     public GuardPolicyDelegate(PolicyClient policyClient, ClampProperties refProp) {
