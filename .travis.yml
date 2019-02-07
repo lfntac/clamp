@@ -7,3 +7,5 @@ addons:
   apt:
     packages:
       - docker-ce
+
+script: mvn install
