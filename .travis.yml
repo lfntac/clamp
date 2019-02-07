@@ -7,5 +7,10 @@ addons:
   apt:
     packages:
       - docker-ce
+  sonarcloud:
+    organization: "chrisc-att-github" # the key of the org you chose at step #3
 
-script: mvn install
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar
+
