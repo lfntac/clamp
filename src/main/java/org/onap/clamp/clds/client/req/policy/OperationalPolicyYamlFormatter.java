@@ -80,7 +80,6 @@ public class OperationalPolicyYamlFormatter {
         // create builder
         ControlLoopPolicyBuilder builder = ControlLoopPolicyBuilder.Factory.buildControlLoop(prop.getControlName(),
             policyChain.getTimeout(), service, vfResources);
-        // builder.setTriggerPolicy(refProp.getStringValue("op.openloop.policy"));
         // Build the specification
         Results results = builder.buildSpecification();
         validate(results);
